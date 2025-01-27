@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Domains</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lilita+One&family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Key Image Trigger -->
+        <div class="centered-key" onclick="openPasswordModal()">
+            <img src="vecteezy_simple-lock-and-wing-logo_20390190-removebg-preview.png" alt="Key Icon">
+            <p class="key-text"></p>
+        </div>
+
+        <!-- Hidden Content -->
+        <div class="content hidden" id="content">
+            <h1 class="rubik-broken-fax-regular veiled-realms-title">Hidden Domains</h1>
+            <p>Welcome, Seeker of the Hidden. The Hidden Domains  open only to those bold enough to step beyond the everyday. Prepare yourself—mysteries await, concealed in whispers and shadows.</p>
+
+            <section id="about">
+                <h2 class="rubik-broken-fax-regular underline-title">About the Realms</h2>
+                <p><span class="first-word">Veiled</span> Realms is not just another digital outpost. It’s a portal—a realm where secrets converge, and unseen forces linger just beyond the periphery. Dare to gaze into the depths of shadow, where ancient knowledge waits.</p>
+                <p>Here, every click takes you deeper, revealing more of the unseen world. Traverse the paths at your own peril, for each step requires a braver heart than the last.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="veilednomics">
+                <h2 class="rubik-broken-fax-regular underline-title">Veilednomics</h2>
+                <p><span class="first-word">Beyond</span> mere currency, Veilednomics symbolizes an alchemy of value and mystery. Here, tokens are not just wealth; they are keys that unlock layers of enigma and grants to those who possess them the right to transcend the ordinary.</p>
+                <p>Believe, and doors will open. Doubt, and they vanish.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="arcane-links">
+                <h2 class="rubik-broken-fax-regular underline-title">Arcane Links</h2>
+                <p>Each link here connects to knowledge from the past and present, fueling your journey through the unknown. Discover allies, whispers, and answers among:</p>
+                <ul>
+                    <li><a href="https://x.com/hidden_domains" target="_blank">Twitter: @VeiledRealms</a></li>
+                    <li><a href="https://t.me/hiddendomains" target="_blank">Telegra: Veiled Society</a></li>                </ul>
+                <p>Remember, the connections you make here are no coincidence. Each name, each symbol, carries a meaning meant for you alone.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="artifacts">
+                <h2 class="rubik-broken-fax-regular underline-title">The Artifacts</h2>
+                <p>Gather hidden relics, each with its own legend. To the untrained eye, they may seem ordinary. But here, they carry powers yet to be revealed. Seek them, cherish them, and be transformed.</p>
+                <ul>
+                    <li>The Mirror of Echoes</li>
+                    <li>The Key of Secrets</li>
+                    <li>The Shard of Time</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Password Modal -->
+    <div id="passwordModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Enter the Ticker / or just type "Unlock" </h2>
+            <input type="password" id="passwordInput" placeholder="Enter Code">
+            <button type="button" onclick="togglePasswordVisibility()">Reveal</button>
+            <button onclick="checkPassword()">Unlock</button>
+            <div id="errorMessage" class="error-message hidden">The code is incorrect. Try again, Seeker.</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
